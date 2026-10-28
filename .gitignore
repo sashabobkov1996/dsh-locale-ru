@@ -1,0 +1,6 @@
+node_modules/
+tools/client/
+i18n/work/
+i18n/problems.json
+*.log
+.DS_Store

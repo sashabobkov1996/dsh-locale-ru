@@ -1,0 +1,44 @@
+{
+  "name": "dsh-locale-ru",
+  "version": "0.2.0",
+  "description": "Russian language pack for the DeepSeek Harness web GUI",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js"
+  ],
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "node tools/build-plugin.mjs",
+    "check": "node tools/fake-load.mjs",
+    "extract": "node tools/extract-client.mjs && node tools/extract-i18n.mjs",
+    "chunks": "node tools/make-chunks.mjs",
+    "merge": "node tools/merge-parts.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "locale",
+    "russian",
+    "localization",
+    "plugin"
+  ]
+}
