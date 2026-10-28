@@ -11,6 +11,8 @@ namespace.
   auto-updates keep working.
 - Missing keys fall back to English (`ru → en`), so partial coverage never breaks the UI.
 
+![DeepSeek Harness interface in Russian](docs/screenshot.png)
+
 ## Install
 
 ```powershell
