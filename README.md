@@ -19,7 +19,7 @@
 ### Вариант 1. Скриптом
 
 ```powershell
-git clone https://github.com/<user>/dsh-locale-ru.git
+git clone https://github.com/sashabobkov1996/dsh-locale-ru.git
 cd dsh-locale-ru
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install.ps1
 ```
